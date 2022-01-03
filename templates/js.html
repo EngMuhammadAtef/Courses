@@ -1,0 +1,242 @@
+{% extends 'index.html' %}
+{% block body %}
+    <!-- Page Content  -->
+        <h2> What is JavaScript?
+        </h2>
+        <p>
+            JavaScript is the world's most popular programming language.
+            <br>
+            JavaScript is the programming language of the Web.
+            <br>
+            JavaScript is easy to learn.
+            <br>
+            This tutorial will teach you JavaScript from basic to advanced.
+        </p>      
+
+        <div class="line"></div>
+
+        <h2>What can JavaScript do?</h2>
+            <br>
+            JavaScript is one of the 3 languages all web developers must learn:
+            <br>
+            1. HTML to define the content of web pages
+            <br>
+            2. CSS to specify the layout of web pages
+            <br>
+            3. JavaScript to program the behavior of web pages
+        </p>
+
+        <div class="line"></div>
+
+        <a name="Variables"></a>
+
+        <h2> JavaScript Variables
+        </h2>
+        <p>
+            Variables are containers for storing data values.
+            <br>
+            There are 3 ways to declare a JavaScript variable:
+            <br>
+            1- Using var
+            <br>
+            2- Using let
+            <br>
+            3- Using const
+
+        </p>
+        <div class="line"></div>
+        <h2> Example </h2>
+        <p>
+            var x = 5; 
+            <br>
+            let name = "John";
+            <br>
+            console.log(x);
+            <br>
+            console.log(name);
+            <br>
+            <br>
+            >> 5
+            <br>
+            >> John
+            <br>
+            <br>
+        </p>
+
+        <div class="line"></div>
+        <a name="DataTypes"></a>
+        <h2> JavaScript Data Types
+        </h2>
+        <p>
+            In programming, data type is an important concept.
+            <br>
+            Variables can store data of different types, and different types can do different things.
+        <div class="line"></div>
+        String Type :===>>> let lastName = "MeMe";
+        <br>
+        Number Type :===>>>> # let length = 16;
+        <br>
+        Object Type :===>>>> let x = {firstName:"Mohamaed", lastName:"Atef"};
+        </p>
+
+        <div class="line"></div>
+        <a name="If-Else"></a>
+        <h2> JavaScript Conditions and If statements        </h2>
+        <p>
+            JavaScript supports the usual logical conditions from mathematics:
+            <br>
+            Equals: a == b
+            <br>
+            Not Equals: a != b
+            <br>
+            Less than: a < b
+            <br>
+            Less than or equal to: a <= b
+            <br>
+            Greater than: a > b
+            <br>
+            Greater than or equal to: a >= b
+        </p>
+        <div class="line"></div>
+        <h2> Example </h2>
+        <p>
+            int a = 10;   
+            <br>
+            int b = 5;
+            <br>
+            if (b > a) {console.log("b is greater than a")}
+            <br>
+            else if (a == b) {console.log("a and b are equal")}
+            <br>
+            else {console.log("a is greater than b")}
+            <br>
+            <br>
+            >> a is greater than b
+        </p>
+
+
+
+
+
+        <div class="line"></div>
+        <a name="WhileLoops"></a>
+        <h2> JavaScript While Loop</h2>
+        <p>
+            Loops can execute a block of code as long as a specified condition is reached.
+            <br>
+            Loops are handy because they save time, reduce errors, and they make code more readable.
+            <br>
+            The while loop loops through a block of code as long as a specified condition is true:
+        </p>
+        <div class="line"></div>
+        <h2> Example </h2>
+        <p>
+            // Print i as long as i is less than 5:
+            <br>
+            int i = 1;
+            <br>
+
+            while (i < 5) {
+            <br>
+              console.log(i);
+              <br>
+              i++;
+              <br>
+            }
+            <br>
+            <br>
+            >> 1
+            <br>
+            >> 2
+            <br>
+            >> 3
+            <br>
+            >> 4
+        </p>
+        <div class="line"></div>
+        <a name="ForLoops"></a>
+        <h2> JavaScript For Loop        </h2>
+        <p>
+            When you know exactly how many times you want to loop through a block of code, use the for loop instead of a while loop:
+        </p>
+        <div class="line"></div>
+        <h2> Example </h2>
+        <p>
+            for (int i = 1; i < 5; i++) {
+            <br>
+            console.log(i);}
+            <br>
+            <br>
+            >> 1
+            <br>
+            >> 2
+            <br>
+            >> 3
+            <br>
+            >> 4
+        </p>      
+        <div class="line"></div>
+        <a name="Functions"></a>
+        <h2> JavaScript Methods        </h2>
+        <p>
+            A Method is a block of code which only runs when it is called.
+            <br>
+            You can pass data, known as parameters, into a method.
+            <br>
+            Methods are used to perform certain actions, and they are also known as functions.
+            <br>
+            Why use methods? To reuse code: define the code once, and use it many times.
+        </p>
+        <div class="line"></div>
+        <h2> Create a Method        </h2>
+        <p>
+            function myFunction() {
+                <br>
+                console.log("I just got executed!");}
+                <br>
+            }
+            <br>
+            <br>
+            >> I just got executed!
+        </p>
+
+        <div class="line"></div>
+        <a name="Arrays"></a>
+        <h2> JavaScript Arrays        </h2>
+        <p>
+            Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value.
+            <br>
+            To declare an array, define the variable type with square brackets:
+        <div class="line"></div>
+        <h2> Example </h2>
+        <p>
+            // Create an array containing car names:
+            <br>
+            const cars = ["Saab", "Volvo", "BMW"];
+            <br>
+            <h4>Access the Elements of an Array            </h4> 
+            <br>
+            // You access an array element by referring to the index number.
+            <br>
+            const cars = ["Saab", "Volvo", "BMW"];
+            <br>
+            console.log(cars[0]);
+            <br>
+            <br>
+            >> Saab
+            <br>
+            <br>
+            <h4>Modify the value of the first array item:</h4> 
+            <br>
+            cars[0] = "Opel";
+            <br>
+            console.log(cars);
+            <br>
+            <br>
+            >> ["Opel", "Volvo", "BMW"];
+        </p>
+
+        
+        <div class="line"></div>
+
+{% endblock %}

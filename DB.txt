@@ -1,0 +1,34 @@
+CREATE TABLE users(
+    uid INT NOT NULL,
+    name VARCHAR(20),
+    email  VARCHAR(20),
+    pass  VARCHAR(20),
+    PRIMARY KEY(uid)
+   );
+
+
+CREATE TABLE courses( 
+    cid INT NOT NULL, 
+    name VARCHAR(20), 
+    price VARCHAR(20), 
+    PRIMARY KEY(cid)
+  ); 
+
+
+CREATE TABLE enroll(
+    uid INT NOT NULL,
+    cid INT NOT NULL,
+    FOREIGN KEY (uid) REFERENCES users (uid),
+    FOREIGN KEY (cid) REFERENCES courses (cid),
+    PRIMARY KEY(uid, cid)
+  );
+
+
+CREATE TABLE promocode(
+    code VARCHAR(6)
+  );
+
+
+INSERT INTO promocode VALUES ( "M12345" ); 
+
+INSERT INTO courses VALUES (1 , "Frontend" ,"Free");

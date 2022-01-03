@@ -1,0 +1,97 @@
+
+
+.frame{
+    display: inline-block;
+    width: 600px;
+    height: 750px;
+    border: 1px solid rgb(26, 26, 26);
+    border-radius: 20px;
+    margin-left: 400px;
+    margin-top: 160px;
+    background-image:url('../pics/1.png') ;
+    background-size: cover;
+  
+  }
+
+.log{
+  font-size: 40px;
+  font-family: 'Hind', sans-serif;
+      padding-left: 5px;
+  padding-top: 50px;
+  border-bottom: 5px solid #5ED58E;
+  margin-right: 460px;
+  margin-left: 50px;
+
+}
+.email{
+   display: inline-block;
+  font-weight: bold;  
+  font-size: 35px;
+  font-family: 'Hind', sans-serif;
+      padding-left: 50px;
+  padding-top: 25px;
+}
+input{
+  border-radius: 15px;
+padding-left: 3PX;
+width: 400px;
+height: 50px;
+padding-top: 7px;
+font-size: 25px;
+
+}
+::placeholder{
+  padding-top: 20px;
+  font-size: 40px;
+
+}
+.box1{
+  padding-left: 50px;
+}
+.sub{
+  padding-top: 50px;
+  padding-left:100px ;
+
+}
+.creat{
+  padding-top: 30px;
+  padding-left:150px ;
+
+}
+
+.button1{
+  text-decoration: none;
+  color: white;
+  background-color: #445E77;
+  font-family: 'Hind', sans-serif;
+  padding: 10px 25px;
+  border-radius: 20px;
+  font-size: 30px;
+
+}
+
+
+
+
+
+
+.b{
+  background-color: #5ED58E;
+  width: 400px;
+  font-family: 'Hind', sans-serif;
+  border-radius: 20px;
+  height: 60px;
+  font-size: 40px;
+
+}
+.space{
+  width: 20px;
+  height: 100px;
+}
+.for{
+  margin-top: 10px;
+padding-left: 180px ;
+  font-size: 25px;
+  text-decoration: none;
+}
+  

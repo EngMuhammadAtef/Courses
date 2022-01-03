@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block body %}
+<form action = "{{ url_for('Signup') }}" method = "POST">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/signup.css') }}"/>
+
+<div class="frame">
+    <p class="sign">SignUp</p>
+    <p class="error"> {{msg}} </p>
+   <h1 class="f">First Name</h1>
+   <h1 class="l">Last Name</h1>
+
+   <div class="box1" >
+        <input type="text" name="fs"  placeholder="First Name">
+    </div>
+
+    <div class="box2" >
+        <input type="text" name="ls" placeholder="Last Name">
+    </div>
+    <br>
+    <h1 class="m">Email</h1>
+    <br>
+    <div class="box3" >
+        <input class="M" type="text" name="em"  placeholder="Email Address">
+    </div>
+    
+    <h1 class="m">Set Your Password </h1>
+        <div class="box3" >
+            <input class="M" type="password"  name="ps" placeholder="New Password">
+        </div>
+
+    <h1 class="m">Date Of Birth </h1>
+        <div class="box3">
+            <input class="M" type="date" id="birthday" name="birthday">
+        </div>
+    
+    <div class="sub">
+        <button class="b" type="submit"  >Submit</button>
+    </div>
+    <a class="for" href="/Login">Already Have an Account</a>
+
+
+
+
+  </div>
+  <div class="space"></div>
+</form>
+{% endblock %}

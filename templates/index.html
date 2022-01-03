@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>{{  page_title }}</title>
+
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}"/> 
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style4.css') }}"/> 
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Formula</h3>
+                <strong>F</strong>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-home"></i>
+                        Home
+                    </a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="/#FrontEnd">Free Courses</a>
+                        </li>
+                        <li>
+                            <a href="/#Paidcourses">Paid Courses</a>
+                        </li>
+                        <li>
+                            <a href="/#ABOUT">About</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-briefcase"></i>
+                        Why I should learn ?
+                    </a>
+                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                    <i class="fas fa-copy"></i>
+                    Lessons
+                </a>
+                <ul class="collapse list-unstyled" id="pageSubmenu">
+                    <li>
+                        <a href="#Variables">Variables</a>
+                    </li>
+                    <li>
+                        <a href="#DataTypes">Data Types</a>
+                    </li>
+                    <li>
+                        <a href="#If-Else">If-Else</a>
+                    </li>
+                    <li>
+                        <a href="#WhileLoops">While Loops</a>
+                    </li>
+                    <li>
+                        <a href="#ForLoops">For Loops</a>
+                    </li>
+                    <li>
+                        <a href="#Functions">Functions</a>
+                    </li>
+                    <li>
+                        <a href="#Arrays">Arrays</a>
+                    </li>
+                </ul>
+                </li>
+                <li>
+                    <a href="/#ABOUT">
+                        <i class="fas fa-paper-plane"></i>
+                        Contact Us
+                    </a>
+                </li>
+            </ul>
+        </nav>
+</head>
+
+<body>
+    <div id="content">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+
+                <button type="button" id="sidebarCollapse" class="btn btn-info">
+                    <i class="fas fa-align-left"></i>
+                    <span>O/C Sidebar</span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/#FrontEnd">Free Courses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/#Paidcourses">Paid Courses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/#ABOUT">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+{% block body %}
+
+{% endblock %}
+</div>
+
+    <script src="{{ url_for('static', filename='js/jQuery.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/popper.js') }}" ></script>       
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }} "></script>  
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

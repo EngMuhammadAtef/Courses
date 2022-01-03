@@ -1,0 +1,166 @@
+{% extends 'base.html' %}
+{% block body %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}"/>
+
+<div class="bg">
+    <a class="login" href="/Login">
+<button class="b" type="submit"  >Log in</button>
+    </a>
+    <a class="login" href="/Signup">
+        <button class="b"  type="submit">Sign Up</button>
+    </a>
+        
+    <div class="search">
+<input class="in" type="search" placeholder="Search .. ">
+    </div>
+</div>
+
+<a name="FrontEnd"></a>
+<div class="all">
+    <div class="se">
+        <img class="p3" src="{{ url_for('static', filename='pics/3.png') }}" alt="photo">
+     </div>
+<div class="fe">
+    <h1 class="fh">Front End</h1>
+    <p class="p1"> What You Will Learn : </p>
+    <p class="p2"> <i class="fas fa-dot-circle"></i> How to use the latest HTML 5 standard to HTML used to format <br>text ,  creat hyperlinks, tables, lists, forms, display image and more. </p>
+    <p class="p2"> <i class="fas fa-dot-circle"></i> How to use CSS to change appearance and layout of all the pages<br> in a Web site </p>
+    <p class="p2"> <i class="fas fa-dot-circle"></i> How to use JavaScript to improve the design, validate forms. </p>
+    <center>          
+        <a href="/Login">      
+        <button class="b1" type="button"> Study Now ..</button>
+        </a>
+    </center>
+    <br>
+</div>
+
+</div>
+<a name="Paidcourses"></a>
+
+<a name="java"></a>
+<div class="all1">
+    <div class="se">
+        <img class="p3" src="{{ url_for('static', filename='pics/4.png') }}" alt="photo">     
+     </div>
+<div class="fe">
+    <h1 class="fh">Java</h1>
+    <p class="p1"> What You Will Learn : </p>
+    <p class="p2"> <i class="fas fa-dot-circle"></i> Java works on different platforms (Windows, Mac, Linux, Raspberry<br> Pi, etc.) </p>
+    <p class="p2"> <i class="fas fa-dot-circle"></i> Java is an object oriented language which gives a clear structure <br>to programs and allows code to be reused, lowering development costs</p>
+    <p class="p2"> <i class="fas fa-dot-circle"></i> As Java is close to C++ and C#, it makes it easy for programmers . </p>
+    <center>
+        <a href="/Login">    
+        <button class="b1" type="button"> Study Now ..</button>
+        </a>
+    </center>
+    <br>
+
+</div>
+</div>
+<a name="c++"></a>
+
+<div class="all2">
+    <div class="se">
+        <img class="p3" src="{{ url_for('static', filename='pics/5.png') }}" alt="photo">
+     
+     </div>
+<div class="fe">
+    <h1 class="fh">C++</h1>
+    <p class="p1"> What You Will Learn : </p>
+    <p class="p2"> <i class="fas fa-dot-circle"></i> C++ is a cross-platform language that can be used to create <br> high-performance applications. </p>
+    <p class="p2"> <i class="fas fa-dot-circle"></i> C++ gives programmers a high level of control over system <br> resources and memory.</p>
+    <p class="p2"> <i class="fas fa-dot-circle"></i> C++ is an object-oriented programming language which gives a clear <br> structure to programs . </p>
+    <center>    
+        <a href="/Login">
+        <button class="b1" type="button"> Study Now ..</button>
+        </a>
+    </center>
+    <br>
+
+</div>
+</div>
+
+<a name="c#"></a>
+
+<div class="all3">
+    <div class="se">
+        <img class="p3" src="{{ url_for('static', filename='pics/6.png') }}" alt="photo">
+     
+     </div>
+<div class="fe">
+    <h1 class="fh">C#</h1>
+    <p class="p1"> What You Will Learn : </p>
+    <p class="p2"> <i class="fas fa-dot-circle"></i> C# is an object oriented language which gives a clear structure <br> to programs and allows code to be reused, <br> lowering development costs. </p>
+    <p class="p2"> <i class="fas fa-dot-circle"></i> As C# is close to C, C++ and Java, it makes <br> it easy for programmers to switch to C# or vice versa</p>
+    <p class="p2"> <i class="fas fa-dot-circle"></i> It is one of the most popular programming language in the world </p>
+    <center>   
+        <a href="/Login"> 
+        <button class="b1" type="button"> Study Now ..</button>
+        </a>>
+    </center>
+    <br>
+
+</div>
+
+
+</div>
+<a name="python"></a>
+
+<div class="all4">
+    <div class="se">
+        <img class="p3" src="{{ url_for('static', filename='pics/7.png') }}" alt="photo">
+     </div>
+<div class="fe">
+    <h1 class="fh">Python</h1>
+    <p class="p1"> What You Will Learn : </p>
+    <p class="p2"> <i class="fas fa-dot-circle"></i> Python works on different platforms <br> (Windows, Mac, Linux, Raspberry Pi, etc) </p>
+    <p class="p2"> <i class="fas fa-dot-circle"></i> Python has a simple syntax similar to the English language.</p>
+    <p class="p2"> <i class="fas fa-dot-circle"></i> Python can be used on a server to create web applications. </p> 
+<center>
+    <a href="/Login">
+        <button class="b1" type="button"> Study Now ..</button>
+    </a> 
+</center>
+<br>
+
+</div>
+</div>
+
+<!--IDs-->
+
+<a name="ABOUT"></a>
+<img class="photo"  src="{{ url_for('static', filename='pics/logo-d.png') }}" alt="logo">
+<div class="allc">
+
+
+    <div class="c1">
+        <img class="c11" src="{{ url_for('static', filename='pics/Fawzy.jpg') }}" alt="icon-1">
+        <h1>Mohamed <br> Fawzi</h1>
+        <h2>Front-End Devoloper</h2>
+    
+    </div>
+    <div class="c2">
+        <img class="c11" src="{{ url_for('static', filename='pics/Hossam.jpg') }}" alt="icon-1">
+        <h1>Hossam <br> Ezzat</h1>
+        <h2>Front-End Devoloper</h2>
+    </div>
+    <div class="c3">
+        <img class="c11" src="{{ url_for('static', filename='pics/Mohamed.jpg') }}" alt="icon-1">
+        <h1>Mohamed <br> Atef</h1>
+        <h2>Back-End Devoloper</h2>
+    </div>
+    <div class="c4">
+        <img class="c11" src="{{ url_for('static', filename='pics/Aya.jpg') }}" alt="icon-1">
+        <h1>Aya <br> Yasser</h1>
+        <h2>Ui-Ux <br> Designer</h2>
+    </div>
+    <div class="c5">
+        <img class="c11" src="{{ url_for('static', filename='pics/Nourhan.jpg') }}" alt="icon-1">
+        <h1>Nourhan <br> Elrouby</h1>
+        <h2>Database Designer</h2>
+    </div>
+    
+    </div>
+    <!--End-IDs-->
+    
+{% endblock %}

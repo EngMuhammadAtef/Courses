@@ -1,0 +1,280 @@
+{% extends 'index.html' %}
+{% block body %}
+    <!-- Page Content  -->
+        <h2> What is C++?
+        </h2>
+        <p>
+            C++ is a cross-platform language that can be used to create high-performance applications.
+            <br>
+            C++ was developed by Bjarne Stroustrup, as an extension to the C language.
+            <br>
+            C++ gives programmers a high level of control over system resources and memory.
+            <br>
+            The language was updated 3 major times in 2011, 2014, and 2017 to C++11, C++14, and C++17.
+        </p>      
+
+        <div class="line"></div>
+
+        <h2>Why Use C++ ?        </h2>
+        <p>
+            C++ is one of the world's most popular programming languages.
+
+            <br>
+            C++ can be found in today's operating systems, Graphical User Interfaces, and embedded systems.
+
+            <br>
+            C++ is an object-oriented programming language which gives a clear structure to programs and allows code to be reused, lowering development costs.
+
+            <br>
+            C++ is portable and can be used to develop applications that can be adapted to multiple platforms.
+
+            <br>
+            C++ is fun and easy to learn!
+
+            <br>
+            C++ is fun and easy to learn!
+
+        </p>
+
+        <div class="line"></div>
+
+        <h3>C++ Syntax        </h3>
+        <p>
+            Let's break up the following code to understand it better:
+            <br>
+            <br>
+            #include < iostream>
+            <br>
+            using namespace std;
+            int main() {
+                <br>
+                cout << "Hello World!";
+                <br>
+                return 0;              
+            }
+        <br>
+        }
+        <br>
+        <br>
+        >> Hello World!
+
+        </p>
+        <div class="line"></div>
+
+        <a name="Variables"></a>
+
+        <h2> C++ Variables
+        </h2>
+        <p>
+            Variables are containers for storing data values.
+            A variable is created the moment you first assign a value to it.
+        </p>
+        <div class="line"></div>
+        <h2> Example </h2>
+        <p>
+            int x = 5;
+            <br>
+            string name = "John";
+            <br>
+            cout << x;
+            <br>
+            cout << name;
+            <br>
+            <br>
+            >> 5
+            <br>
+            >> John
+            <br>
+            <br>
+        </p>
+
+        <div class="line"></div>
+        <a name="DataTypes"></a>
+        <h2> C++ Data Types
+        </h2>
+        <p>
+            In programming, data type is an important concept.
+            <br>
+            Variables can store data of different types, and different types can do different things.
+            <br>
+            As explained in the Variables chapter, a variable in C++ must be a specified data type:
+
+        <div class="line"></div>
+        Text Type :===>>> str # string myText = "Hello";
+        <br>
+        Int Type :===>>>> int # int myNum = 5;
+        <br>
+        Float Types :===>>>	float # float myFloatNum = 5.99;
+        <br>
+        Char Types :===>>> char # char myLetter = 'D';
+        <br>
+        Boolean Type :===>>> bool # bool myBool = true;
+        </p>
+
+        <div class="line"></div>
+        <a name="If-Else"></a>
+        <h2> C++ Conditions and If statements        </h2>
+        <p>
+            C++ supports the usual logical conditions from mathematics:
+            <br>
+            Equals: a == b
+            <br>
+            Not Equals: a != b
+            <br>
+            Less than: a < b
+            <br>
+            Less than or equal to: a <= b
+            <br>
+            Greater than: a > b
+            <br>
+            Greater than or equal to: a >= b
+        </p>
+        <div class="line"></div>
+        <h2> Example </h2>
+        <p>
+            int a = 10;   
+            <br>
+            int b = 5;
+            <br>
+            if (b > a) {cout <<"b is greater than a"}
+            <br>
+            else if (a == b) {cout <<"a and b are equal"}
+            <br>
+            else {cout <<"a is greater than b"}
+            <br>
+            <br>
+            >> a is greater than b
+        </p>
+
+
+
+
+
+        <div class="line"></div>
+        <a name="WhileLoops"></a>
+        <h2> C++ While Loop</h2>
+        <p>
+            Loops can execute a block of code as long as a specified condition is reached.
+            <br>
+            Loops are handy because they save time, reduce errors, and they make code more readable.
+            <br>
+            The while loop loops through a block of code as long as a specified condition is true:
+        </p>
+        <div class="line"></div>
+        <h2> Example </h2>
+        <p>
+            // Print i as long as i is less than 5:
+            <br>
+            int i = 1;
+            <br>
+
+            while (i < 5) {
+            <br>
+              cout << i << endl;
+              <br>
+              i++;
+              <br>
+            }
+            <br>
+            <br>
+            >> 1
+            <br>
+            >> 2
+            <br>
+            >> 3
+            <br>
+            >> 4
+        </p>
+        <div class="line"></div>
+        <a name="ForLoops"></a>
+        <h2> C++ For Loop        </h2>
+        <p>
+            When you know exactly how many times you want to loop through a block of code, use the for loop instead of a while loop:
+        </p>
+        <div class="line"></div>
+        <h2> Example </h2>
+        <p>
+            for (int i = 1; i < 5; i++) {
+            <br>
+            cout << i;
+            <br>
+        }
+            <br>
+            <br>
+            >> 1
+            <br>
+            >> 2
+            <br>
+            >> 3
+            <br>
+            >> 4
+        </p>      
+        <div class="line"></div>
+        <a name="Functions"></a>
+        <h2> C++ Functions        </h2>
+        <p>
+            A function is a block of code which only runs when it is called.
+            <br>
+            You can pass data, known as parameters, into a function .
+            <br>
+            functions are used to perform certain actions, and they are also known as functions.
+            <br>
+            Why use functions? To reuse code: define the code once, and use it many times.
+        </p>
+        <div class="line"></div>
+        <h2> Create a function        </h2>
+        <p>
+            void myFunction() {cout << "I just got executed!"}
+                <br>
+                int main() {
+                <br>
+                myFunction(); // call the function
+                <br>
+                return 0;
+                <br>
+              }
+            <br>
+            <br>
+            >> I just got executed!
+        </p>
+
+        <div class="line"></div>
+        <a name="Arrays"></a>
+        <h2> C++ Arrays        </h2>
+        <p>
+            Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value.
+            <br>
+            To declare an array, define the variable type, specify the name of the array followed by square brackets and specify the number of elements it should store:
+            <div class="line"></div>
+        <h2> Example </h2>
+        <p>
+            // Create an array containing car names:
+            <br>
+            string cars[4] = {"Volvo", "BMW", "Ford", "Mazda"};
+            <br>
+            <h4>Access the Elements of an Array            </h4> 
+            <br>
+            // You access an array element by referring to the index number.
+            <br>
+            String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+            <br>
+            cout << cars[0];
+            <br>
+            <br>
+            >> Volvo
+            <br>
+            <br>
+            <h4>Modify the value of the first array item:</h4> 
+            <br>
+            cars[0] = "Opel";
+            <br>
+            cout << cars;
+            <br>
+            <br>
+            >> {"Opel", "BMW", "Ford", "Mazda"}
+        </p>
+
+        
+        <div class="line"></div>
+
+{% endblock %}

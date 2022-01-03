@@ -1,0 +1,120 @@
+
+  .frame{
+    display: inline-block;
+    width: 600px;
+    height: 750px;
+    border: 1px solid rgb(26, 26, 26);
+    border-radius: 20px;
+    margin-left: 400px;
+    margin-top: 160px;
+    background-image:url('../pics/1.png') ;
+    background-size: cover;
+  
+  }
+.sign{
+  font-size: 40px;
+  font-family: 'Hind', sans-serif;
+      padding-left: 5px;
+  padding-top: 50px;
+  border-bottom: 5px solid #5ED58E;
+  margin-right: 460px;
+  margin-left: 50px;
+
+}
+.f{
+  display: inline-block;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: 'Hind', sans-serif;
+      padding-left: 50px;
+  padding-top: 25px;
+}
+.l{
+  display: inline-block;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: 'Hind', sans-serif;
+      padding-right: 180px;
+  padding-top: 25px;
+  float: right;
+}
+
+.m{
+  display: inline-block;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: 'Hind', sans-serif;
+  padding-left: 50px;
+  padding-top: 20px;
+}
+
+input{
+  border-radius: 15px;
+padding-left: 3PX;
+width: 150px;
+height: 40px;
+padding-top: 7px;
+font-size: 20px;
+}
+
+.M{
+  border-radius: 15px;
+padding-left: 3PX;
+width: 400px;
+height: 50px;
+padding-top: 7px;
+font-size: 25px;
+
+}
+
+
+::placeholder{
+  padding-bottom: 5px;
+  font-size: 25px;
+
+}
+.box1{
+  display: inline-block;
+
+  padding-left: 50px;
+}
+.box2{
+  display: inline-block;
+  float: right;
+  padding-right: 145px;
+}
+.box3{
+  display: inline-block;
+  
+  padding-left: 50px;
+}
+
+
+.sub{
+  padding-top: 40px;
+  padding-left:100px ;
+
+}
+.b{
+  background-color: #5ED58E;
+  width: 400px;
+  font-family: 'Hind', sans-serif;
+  border-radius: 20px;
+  height: 60px;
+  font-size: 40px;
+
+}
+.for{
+  margin-top: 10px;
+padding-left: 180px ;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+
+
+
+.space{
+  width: 20px;
+  height: 100px;
+}

@@ -1,0 +1,278 @@
+{% extends 'index.html' %}
+{% block body %}
+    <!-- Page Content  -->
+        <h2> What is Java?
+        </h2>
+        <p>Java is a popular programming language, created in 1995.
+        </p>      
+
+
+        <div class="line"></div>
+
+        <h2>What can Java do?</h2>
+        <p>It is used for:
+            <br>
+            Mobile applications (specially Android apps)
+            <br>
+            Desktop applications
+            <br>
+            Web applications
+            <br>
+            Web servers and application servers
+            <br>
+            Games
+            <br>
+            Database connection
+        </p>
+        <div class="line"></div>
+
+        <h2>Why Use Java?        </h2>
+        <p>
+            Java works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc.)
+            <br>
+            Java is one of the most popular programming language in the world
+            <br>
+            Java is easy to learn and simple to use
+            <br>
+            Java is open-source and free.
+            <br>
+            Java is secure, fast and powerful.
+            <br>
+            Java is an object oriented language which gives a clear structure to programs and allows code to be reused, lowering development costs
+        </p>
+
+        <div class="line"></div>
+
+        <h3>Java Syntax        </h3>
+        <p>
+            we created a Java file called Main.java, and we used the following code to print "Hello World" to the screen:
+            <br>
+            <br>
+            public class Main {
+            <br>
+            public static void main(String[] args) {
+                System.out.println("Hello World");
+            }
+        }
+        >> Hello World
+
+        </p>
+        <div class="line"></div>
+
+        <a name="Variables"></a>
+
+        <h2> Java Variables
+        </h2>
+        <p>
+            Variables are containers for storing data values.
+            A variable is created the moment you first assign a value to it.
+        </p>
+        <div class="line"></div>
+        <h2> Example </h2>
+        <p>
+            int x = 5;
+            <br>
+            String name = "John";
+            <br>
+            System.out.println(x);
+            <br>
+            System.out.println(name);
+            <br>
+            <br>
+            >> 5
+            <br>
+            >> John
+            <br>
+            <br>
+        </p>
+
+        <div class="line"></div>
+        <a name="DataTypes"></a>
+        <h2> Java Data Types
+        </h2>
+        <p>
+            In programming, data type is an important concept.
+            <br>
+            Variables can store data of different types, and different types can do different things.
+            <br>
+            As explained in the previous chapter, a variable in Java must be a specified data type:
+
+        <div class="line"></div>
+        Text Type :===>>> str # String myText = "Hello";
+        <br>
+        Int Type :===>>>> int # int myNum = 5;
+        <br>
+        Float Types :===>>>	float # float myFloatNum = 5.99f;
+        <br>
+        Char Types :===>>> char # char myLetter = 'D';
+        <br>
+        Boolean Type :===>>> bool # boolean myBool = true;
+        </p>
+
+        <div class="line"></div>
+        <a name="If-Else"></a>
+        <h2> Java Conditions and If statements        </h2>
+        <p>
+            Java supports the usual logical conditions from mathematics:
+            <br>
+            Equals: a == b
+            <br>
+            Not Equals: a != b
+            <br>
+            Less than: a < b
+            <br>
+            Less than or equal to: a <= b
+            <br>
+            Greater than: a > b
+            <br>
+            Greater than or equal to: a >= b
+        </p>
+        <div class="line"></div>
+        <h2> Example </h2>
+        <p>
+            int a = 10;   
+            <br>
+            int b = 5;
+            <br>
+            if (b > a) {System.out.println("b is greater than a")}
+            <br>
+            else if (a == b) {System.out.println("a and b are equal")}
+            <br>
+            else {System.out.println("a is greater than b")}
+            <br>
+            <br>
+            >> a is greater than b
+        </p>
+
+
+
+
+
+        <div class="line"></div>
+        <a name="WhileLoops"></a>
+        <h2> Java While Loop</h2>
+        <p>
+            Loops can execute a block of code as long as a specified condition is reached.
+            <br>
+            Loops are handy because they save time, reduce errors, and they make code more readable.
+            <br>
+            The while loop loops through a block of code as long as a specified condition is true:
+        </p>
+        <div class="line"></div>
+        <h2> Example </h2>
+        <p>
+            // Print i as long as i is less than 5:
+            <br>
+            int i = 1;
+            <br>
+
+            while (i < 5) {
+            <br>
+              System.out.println(i);
+              <br>
+              i++;
+              <br>
+            }
+            <br>
+            <br>
+            >> 1
+            <br>
+            >> 2
+            <br>
+            >> 3
+            <br>
+            >> 4
+        </p>
+        <div class="line"></div>
+        <a name="ForLoops"></a>
+        <h2> Java For Loop        </h2>
+        <p>
+            When you know exactly how many times you want to loop through a block of code, use the for loop instead of a while loop:
+        </p>
+        <div class="line"></div>
+        <h2> Example </h2>
+        <p>
+            for (int i = 1; i < 5; i++) {
+            <br>
+            System.out.println(i);}
+            <br>
+            <br>
+            >> 1
+            <br>
+            >> 2
+            <br>
+            >> 3
+            <br>
+            >> 4
+        </p>      
+        <div class="line"></div>
+        <a name="Functions"></a>
+        <h2> Java Methods        </h2>
+        <p>
+            A Method is a block of code which only runs when it is called.
+            <br>
+            You can pass data, known as parameters, into a method.
+            <br>
+            Methods are used to perform certain actions, and they are also known as functions.
+            <br>
+            Why use methods? To reuse code: define the code once, and use it many times.
+        </p>
+        <div class="line"></div>
+        <h2> Create a Method        </h2>
+        <p>
+            public class Main {
+                <br>
+                static void myMethod() {
+                <br>
+                  System.out.println("I just got executed!");}
+                <br>
+                public static void main(String[] args) {
+                <br>
+                  myMethod();}
+                <br>
+              }
+            <br>
+            <br>
+            >> I just got executed!
+        </p>
+
+        <div class="line"></div>
+        <a name="Arrays"></a>
+        <h2> Java Arrays        </h2>
+        <p>
+            Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value.
+            <br>
+            To declare an array, define the variable type with square brackets:
+        <div class="line"></div>
+        <h2> Example </h2>
+        <p>
+            // Create an array containing car names:
+            <br>
+            String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+            <br>
+            <h4>Access the Elements of an Array            </h4> 
+            <br>
+            // You access an array element by referring to the index number.
+            <br>
+            String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+            <br>
+            System.out.println(cars[0]);
+            <br>
+            <br>
+            >> Volvo
+            <br>
+            <br>
+            <h4>Modify the value of the first array item:</h4> 
+            <br>
+            cars[0] = "Opel";
+            <br>
+            System.out.println(cars);
+            <br>
+            <br>
+            >> {"Opel", "BMW", "Ford", "Mazda"}
+        </p>
+
+        
+        <div class="line"></div>
+
+{% endblock %}
